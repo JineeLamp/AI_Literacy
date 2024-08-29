@@ -17,7 +17,7 @@ if user_id =='abc' and user_pw == '1234':
     st.sidebar.title(">>Jinee Portfolio")
     #st.image('data\gall.jpg')
 
-    menu = st.sidebar.radio('메뉴선택', ['파이썬기초','탐색적 분석: 전기자동차', '머신러닝', '미니프로젝트 A'], index=None)
+    menu = st.sidebar.radio('메뉴선택', ['파이썬기초','탐색적 분석: 전기자동차', '머신러닝', '미니프로젝트'], index=None)
     st.sidebar.write(menu)
 
     if menu =='탐색적 분석: 전기자동차':
@@ -25,7 +25,7 @@ if user_id =='abc' and user_pw == '1234':
     elif menu == "머신러닝":
         #st.header("공사중")
         cp.aiml_main()
-    elif menu == "파이썬 기초":
+    elif menu == "파이썬기초":
         pb.basic()
     elif menu == "미니프로젝트":
         mp.foodmain()
