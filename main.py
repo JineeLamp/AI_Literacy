@@ -1,6 +1,9 @@
 import streamlit as st
 import electric_car as ec
 import pybasic as pb
+import mainprj as mp    #team project
+import car_predict as cp
+
 
 #로그인 화면
 st.sidebar.title(">>로그인")
@@ -11,17 +14,21 @@ user_pw = st.sidebar.text_input('패스워드 입력', value='',type='password')
 #st.write(user_pw)
 
 if user_id =='abc' and user_pw == '1234':
-    st.sidebar.title(">>지니 Portfolio")
+    st.sidebar.title(">>Jinee Portfolio")
     #st.image('data\gall.jpg')
 
-    menu = st.sidebar.radio('메뉴선택', ['파이썬기초','탐색적 분석: 전기자동차', '머신러닝'], index=None)
+    menu = st.sidebar.radio('메뉴선택', ['파이썬기초','탐색적 분석: 전기자동차', '머신러닝', '미니프로젝트 A'], index=None)
     st.sidebar.write(menu)
 
     if menu =='탐색적 분석: 전기자동차':
         ec.elec_exe()
     elif menu == "머신러닝":
-        st.header("공사중")
-    elif menu == "파이썬기초":
+        #st.header("공사중")
+        cp.aiml_main()
+    elif menu == "파이썬 기초":
         pb.basic()
+    elif menu == "미니프로젝트":
+        mp.foodmain()
+
 
 
