@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
+import matplotlib.font_manager as fm
 
 #import koreanize_matplotlib
 #한글 글꼴

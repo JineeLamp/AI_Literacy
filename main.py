@@ -14,19 +14,19 @@ user_pw = st.sidebar.text_input('패스워드 입력', value='',type='password')
 #st.write(user_pw)
 
 if user_id =='abc' and user_pw == '1234':
-    st.sidebar.title(">>Jinee Portfolio")
+    st.sidebar.title("***Jinee Portfolio***")
     st.image('gall.jpg')
 
-    menu = st.sidebar.radio('메뉴선택', ['파이썬기초','탐색적 분석: 전기자동차', '머신러닝', '미니프로젝트 A'], index=None)
+    menu = st.sidebar.radio('메뉴선택', ['파이썬기초','탐색적 분석: 전기자동차 수요', '머신러닝: 자동차 가격예측', '미니프로젝트: 맛집 추천'], index=None)
     st.sidebar.write(menu)
 
-    if menu =='탐색적 분석: 전기자동차':
+    if menu =='탐색적 분석: 전기자동차 수요':
         ec.elec_exe()
-    elif menu == "머신러닝":
+    elif menu == "머신러닝: 자동차 가격예측":
         cp.aiml_main()
     elif menu == "파이썬기초":
         pb.basic()
-    elif menu == "미니프로젝트 A":
+    elif menu == "미니프로젝트: 맛집 추천":
         mp.food_main()
 
 

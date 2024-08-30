@@ -5,19 +5,19 @@ def fast_food():
             "name": "맥도날드",
             "menu": ["빅맥세트", "상하이버거세트", "베이컨 디럭스세트"],
             "price": [6500, 6900, 7500],
-            "url": "https://goo.gl/maps/T7Z4J9iFi9E2"
+            "url": "https://maps.app.goo.gl/kSMABjF6J5Xo4cBeA"
         },
         {
             "name": "버거킹",
             "menu": ["와퍼세트", "몬스터x세트", "갈릭불고기버거세트"],
             "price": [7500, 9500, 7000],
-            "url": "https://goo.gl/maps/HTJL7LLm6Nz"
+            "url": "https://maps.app.goo.gl/677iHRU6swVuF1Bo8"
         },
         {
             "name": "kfc",
             "menu": ["징거버세트", "치킨너겟10조각", "오리지널치킨2조각"],
             "price": [6900, 5500, 6000],
-            "url": "https://goo.gl/maps/A5W4W5kV4FP2"
+            "url": "https://maps.app.goo.gl/nMFutQkWwMsC9HB57"
         }
     ]
 

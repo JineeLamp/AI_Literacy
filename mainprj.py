@@ -5,8 +5,8 @@ import bunsik as bs
 import streamlit as st
 
 def food_main():
-    st.write("추천 맛집 종류예요")
-    menu_number = st.radio("메뉴선택", ["한식","패스트푸드", "분식"], index=None)
+    st.write("추천 맛집 종류를 선택하세요!")
+    menu_number = st.radio("맛집 종류", ["한식","패스트푸드", "분식"], index=None)
     
     if menu_number == '한식':
         st.write("\"한식\"을 선택하셨네요!")

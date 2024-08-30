@@ -5,19 +5,19 @@ def k_food():
             "name": "경아식당",
             "menu": ["부대찌개", "돼지김치찌개", "제육볶음"],
             "price": [7000, 8000, 9000],
-            "url": "https://goo.gl/maps/H5J8L9P5Q5P2"
+            "url": "https://maps.app.goo.gl/s2sgCz9XKFLKibhr8"
         },
         {
             "name": "고향가마솥곰탕",
             "menu": ["곰탕", "육개장", "도가니탕"],
             "price": [8000, 9000, 12000],
-            "url": "https://goo.gl/maps/E5J6K4M3H3J2"
+            "url": "https://maps.app.goo.gl/Fes22ZK2xgcshUey9"
         },
         {
             "name": "시골쌈밥",
             "menu": ["돌솥쌈밥", "돼지불고기", "오리불고기"],
             "price": [10000, 12000, 15000],
-            "url": "https://goo.gl/maps/D3J5K9L2G2R2"
+            "url": "https://maps.app.goo.gl/edfsWcPBqtXkkeYo8"
         }
     ]
 
