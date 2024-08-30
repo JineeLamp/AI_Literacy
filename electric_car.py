@@ -97,7 +97,7 @@ def elec_exe():
     elif menu == '2022년 분기별 분석':
           quarter_mean(df_melt)    #2022년 분기별 분석
     else:
-          st.image('gall.jpg', width=500)
+          st.image('gall.jpg', width=300)
 
 if __name__=='__main__':    #내부호출일때만 화일실행, 외부호출은 미실행
       elec_exe()
