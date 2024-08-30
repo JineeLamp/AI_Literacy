@@ -18,7 +18,7 @@ if user_id =='abc' and user_pw == '1234':
     st.sidebar.title("***KBWC AI Literacy Portfolio***")
     #st.image('gall.jpg')
 
-    menu = st.sidebar.radio('과정선택', ['과정소개','파이썬기초','탐색적 분석: 전기자동차 수요', '머신러닝: 자동차 가격예측', '미니프로젝트: 맛집 추천'], index=None)
+    menu = st.sidebar.radio('포트폴리오 선택', ['소개','파이썬기초','탐색적 분석: 전기자동차 수요', '머신러닝: 자동차 가격예측', '미니프로젝트: 맛집 추천'], index=None)
     st.sidebar.write(menu)
 
     if menu =='탐색적 분석: 전기자동차 수요':
@@ -29,7 +29,7 @@ if user_id =='abc' and user_pw == '1234':
         pb.basic()
     elif menu == "미니프로젝트: 맛집 추천":
         mp.food_main()
-    elif menu == "과정소개":
+    elif menu == "소개":
         it.intro_main()
         
 
