@@ -6,7 +6,7 @@ import matplotlib.font_manager as fm
 
 #import koreanize_matplotlib
 #한글 글꼴
-plt.rc('font', family = 'NanumGothic')
+#plt.rc('font', family = 'NanumGothic')
 
 def basic():
        #파일 불러오기
