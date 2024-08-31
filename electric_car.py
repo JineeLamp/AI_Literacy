@@ -87,6 +87,7 @@ def quarter_mean(df_melt):
 
 #메인 실행
 def elec_exe():
+    st.write("전국 전기차 수요현황")
     menu = st.selectbox("분석내용",['선택','지역별/연도별 분석','2023년 지역별 분석', '2022년 분기별 분석'])
     df_melt = basic()       #받은 값을 주려면 기억해야 함 변수명이 같더라도 다른 작업
 
@@ -97,7 +98,7 @@ def elec_exe():
     elif menu == '2022년 분기별 분석':
           quarter_mean(df_melt)    #2022년 분기별 분석
     else:
-          st.image('gall.jpg', width=300)
+          st.image('elec_car.JPG', width=450)
 
 if __name__=='__main__':    #내부호출일때만 화일실행, 외부호출은 미실행
       elec_exe()

@@ -21,8 +21,10 @@ def bunsik(): 			# 분식함수 정의
         }
     ]
 
-    while True:
-        money = int(st.number_input("예산은 얼마인가요? "))
+    #while True:
+    #    money = int(st.number_input("예산은 얼마인가요? "))
+    money = st.number_input("예산은 얼마인가요? ", min_value=0, step=1000)
+    if money > 0:
         kk = []
         available = False					        # available은 예산에 맞는 메뉴를 찾았는지를 추적하는 설정
 
@@ -34,8 +36,8 @@ def bunsik(): 			# 분식함수 정의
 
         if kk:
             kk.sort(key=lambda x: x[0])		# 예산에 맞는 메뉴를 가격의 올림차순으로 정렬
-            st.write("예산에 맞는 메뉴예요:")
             st.write("*"*75)
+            st.write("예산에 맞는 메뉴예요:")
             for item in kk:					      # 예산에 맞는 메뉴를 ‘가격, 메뉴 이름, 음식점 이름, 주소’ 내용으로
                 st.write(f"{item[0]} \"{item[1]}\" {item[2]} {item[3]}")
             st.write("*"*75)
@@ -46,3 +48,5 @@ def bunsik(): 			# 분식함수 정의
         else:
             st.write("예산에 맞는 메뉴가 없어요")	# 예산에 맞는 메뉴가 없으면 False값으로 메인화면 선택으로 되돌아감
             return False
+    else:
+        st.write("예산을 입력해주세요") # 예산이 0이거나 입력되지 않은 경우

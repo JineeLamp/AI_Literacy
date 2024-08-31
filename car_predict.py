@@ -134,7 +134,7 @@ def model(filename):
 
 def aiml_main():
     filename = indata()
-    if st.button("예측"): #st.button("예측")==True
+    if st.button("가격예측"): #st.button("예측")==True
         model(filename)
 
 

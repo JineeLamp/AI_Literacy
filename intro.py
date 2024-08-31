@@ -8,7 +8,7 @@ def intro_main():
     st.write("'탐색적 분석'은 파이썬의 pandas, numpy, matplotlib, seaborn을 활용하여 수행했으며,")
     st.write("'머신러닝'은 파이썬의 scikit-learn을 활용하여 RandomForest 모형으로 예측한 결과입니다.")
     st.write("'미니프로젝트'는 강북여성새일터가 자리한 수유역 주변의 혼밥 맛집을 '예산'에 맞게 추천하는 프로그램입니다.")
-    st.write("포트폴리오 앱은 github과 streamlit을 활용한 것입니다.")
+    st.write("포트폴리오 앱은 github과 streamlit을 활용해 구현했습니다.")
     st.write("감사합니다.")
     st.write("***Jinee***")
     

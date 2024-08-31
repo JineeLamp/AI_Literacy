@@ -21,8 +21,11 @@ def k_food():
         }
     ]
 
-    while True:
-        money = int(st.number_input("예산은 얼마인가요? "))
+# 예산 입력 받기
+    money = st.number_input("예산은 얼마인가요? ", min_value=0, step=1000)
+    #while True:
+    #    money = int(st.number_input("예산은 얼마인가요? "))
+    if money > 0:
         kk = []
         available = False
 
@@ -34,13 +37,17 @@ def k_food():
 
         if kk:
             kk.sort(key=lambda x: x[0])
+            st.write("*"*75)
             st.write("예산에 맞는 메뉴예요:")
             for item in kk:
                 st.write(f"{item[0]} \"{item[1]}\" {item[2]} {item[3]}")
+            st.write("*"*75)    
             available = True
 
         if available:
-            return True  					        # 예산에 맞는 메뉴를 찾으면 True값으로 반복문 빠져나감
+            return True  					      # 예산에 맞는 메뉴를 찾으면 True값으로 반복문 빠져나감
         else:
             st.write("예산에 맞는 메뉴가 없어요")	# 예산에 맞는 메뉴가 없으면 False값으로 메인화면 선택으로 되돌아감
             return False
+    else:
+        st.write("예산을 입력해 주세요")  # 예산이 0이거나 입력되지 않은 경우    
