@@ -3,7 +3,7 @@ import random   # 반드시 random을 먼저 실행하고 random 함수를 사�
 
 #구구단 함수
 def gugudan(): 
-    dan = st.number_input("단입력>> ", min_value=1, step=1) 
+    dan = st.number_input("단입력: ", min_value=1, step=1) 
     if dan > 1 :
         for i in range(1,10):
             multi = dan*i

@@ -133,6 +133,7 @@ def model(filename):
     st.write(f'예상 가격: {y_predict[0]}')
 
 def aiml_main():
+    st.write("중고차 사양을 입력하세요!")
     filename = indata()
     if st.button("가격예측"): #st.button("예측")==True
         model(filename)
